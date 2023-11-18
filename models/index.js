@@ -4,6 +4,8 @@ const Comment = require('./comment');
 
 //adding comment for commit
 
+//why isnt my change commiting
+
 User.hasMany(Post, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
