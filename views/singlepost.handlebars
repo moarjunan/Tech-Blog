@@ -1,0 +1,48 @@
+<div class="columns">
+    <div class="column">
+        <h2 class="title is-4">{{name}}</h2>
+    </div>
+</div>
+
+<div class="content box">
+    <p>{{content}}</p>
+    <p>
+        <span class="has-text-grey-light is-size-7">Created by {{user.name}} on {{format_date date_created}}</span>
+    </p>
+
+    {{#if comments.length}}
+    <div class="columns mt-4 comment-list">
+        <div class="column">
+            <h3 class="subtitle is-5">Comments:</h3>
+
+            {{#each comments as |comment|}}
+            <div class="columns mb-2">
+                <div class="column is-four-fifths">
+                    <div class="box">
+                        <h5>{{comment.content}}</h5>
+                        <p class="has-text-grey-light is-size-7">
+                            Created by {{user.name}} on {{format_date comment.date_created}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    {{/if}}
+</div>
+
+<form class="form new-comment-form mt-4">
+    <div class="field">
+        <div class="control">
+            <textarea class="textarea" id="comment-content" name="comment-content" placeholder="Leave a comment"></textarea>
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <button type="submit" class="button is-primary">Submit</button>
+        </div>
+    </div>
+</form>
+
+<script src="/js/post.js"></script>

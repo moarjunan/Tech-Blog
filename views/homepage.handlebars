@@ -1,0 +1,15 @@
+{{#each posts as |post| }}
+<div class="columns mb-4 project box">
+    <div class="column is-half">
+        <h2 class="title is-4">
+            <a href="/post/{{post.id}}">{{post.name}}</a>
+        </h2>
+        <p class="subtitle is-6">Created by {{post.user.name}} on {{format_date post.date_created}}</p>
+    </div>
+    <div class="column is-half">
+        <p>
+            {{post.content}}
+        </p>
+    </div>
+</div>
+{{/each}}

@@ -1,0 +1,126 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+/* Header styling */
+header {
+  border-bottom: 2px solid #3498db; /* Blue border */
+  background-color: #fff; /* White background */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  margin-top: 10px; /* Remove this line */
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  margin-right: 15px;
+  color: #333; /* Dark gray text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #3498db; /* Blue text on hover */
+}
+
+/* Button styling */
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #3498db; /* Blue text */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.no-button:hover {
+  color: #2980b9; /* Slightly darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: blue;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer link styling */
+footer a {
+  color: blue;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Post styling */
+.post {
+  border-bottom: 1px solid #ddd; /* Light gray border between posts */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.post a {
+  color: #3498db; /* Blue link color */
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling */
+.form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #3498db; /* Blue button */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9; /* Slightly darker blue on hover */
+}
+
+/* Add more specific styling as needed */

@@ -1,0 +1,20 @@
+[
+    {
+        "content": "Thanks for sharing your insights!",
+        "date_created": "2023-11-14T20:42:28Z",
+        "user_id": 1,
+        "post_id": 1
+    },
+    {
+        "content": "This is incredibly insightful!",
+        "date_created": "2023-11-14T20:42:28Z",
+        "user_id": 2,
+        "post_id": 2
+    },
+    {
+        "content": "I learned a lot from this post!",
+        "date_created": "2023-11-14T20:42:28Z",
+        "user_id": 3,
+        "post_id": 3
+    }
+]

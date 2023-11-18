@@ -1,0 +1,50 @@
+<div class="columns">
+    <div class="column">
+        <h2 class="title is-4">Welcome, {{name}}!</h2>
+    </div>
+</div>
+
+<div class="columns mt-4">
+    <div class="column is-half">
+        <h3 class="subtitle is-5">Create a New Post:</h3>
+
+        <form class="form new-post-form">
+            <div class="field">
+                <label for="post-name" class="label">Post Title:</label>
+                <div class="control">
+                    <input class="input" type="text" id="post-name" name="post-name" />
+                </div>
+            </div>
+            <div class="field">
+                <label for="post-content" class="label">Content:</label>
+                <div class="control">
+                    <textarea class="textarea" id="post-content" name="post-content"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button type="submit" class="button is-primary">Create</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    {{#if posts.length}}
+    <div class="column is-half">
+        <h3 class="subtitle is-5">My Posts:</h3>
+
+        {{#each posts as |post|}}
+        <div class="columns is-vcentered mb-2">
+            <div class="column is-four-fifths">
+                <h4 class="is-size-6"><a href="/post/{{post.id}}">{{post.name}}</a></h4>
+            </div>
+            <div class="column">
+                <button class="button is-small is-danger" data-id="{{post.id}}">DELETE</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
+
+<script src="./js/profile.js"></script>

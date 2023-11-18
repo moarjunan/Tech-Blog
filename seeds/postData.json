@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Mastering Responsive Design",
+    "content": "Responsive design is crucial for modern web development. Learn how to master it and create outstanding user experiences.",
+    "user_id": 1
+  },
+  {
+    "name": "Effective Git Workflow Strategies",
+    "content": "Git is a powerful version control system. Discover strategies to streamline your workflow and collaborate more efficiently with your team.",
+    "user_id": 2
+  },
+  {
+    "name": "Python Best Practices",
+    "content": "Python is a versatile language. Explore best practices to write clean, efficient, and maintainable Python code for your projects.",
+    "user_id": 3
+  }
+]

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mo's Tech Blog!</title>
+    <!-- Include Bulma CSS from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- Your existing style.css file -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title">
+                            <span class="icon">
+                                <i class="fas fa-globe"></i>
+                            </span>
+                            <a href="/" class="has-text-white">The Tech Blog</a>
+                        </h1>
+                    </div>
+                    <div class="column">
+                        <nav class="navbar">
+                            <div class="navbar-menu">
+                                <div class="navbar-end">
+                                    <!-- Conditionally render login or logout links -->
+                                    {{#if logged_in}}
+                                    <a href="/profile" class="navbar-item">Profile</a>
+                                    <a href="#" class="navbar-item no-button" id="logout">Logout</a>
+                                    {{else}}
+                                    <a href="/login" class="navbar-item">Login</a>
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <!-- Render the sub layout -->
+        {{{ body }}}
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2023 The Tech Blog. All rights reserved.</p>
+            <p>
+                <a>About</a> |
+                <a>Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>
