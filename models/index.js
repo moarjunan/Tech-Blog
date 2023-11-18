@@ -2,6 +2,8 @@ const User = require('./user');
 const Post = require('./Post');
 const Comment = require('./comment');
 
+//adding comment for commit
+
 User.hasMany(Post, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
