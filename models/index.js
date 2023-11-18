@@ -2,9 +2,9 @@ const User = require('./user');
 const Post = require('./Post');
 const Comment = require('./comment');
 
-//adding comment for commit
+//adding more comments bc what is going on
 
-//why isnt my change commiting
+//help!!!!
 
 User.hasMany(Post, {
   foreignKey: 'user_id',
